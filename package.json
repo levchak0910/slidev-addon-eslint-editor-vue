@@ -1,0 +1,53 @@
+{
+  "name": "slidev-addon-eslint-editor-vue",
+  "version": "0.1.0",
+  "description": "Slidev addon that add eslint vue editor component",
+  "author": "Levcsák Sándor",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levchak0910/slidev-addon-eslint-editor-vue.git"
+  },
+  "license": "MIT",
+  "keywords": [
+    "slidev-addon",
+    "slidev",
+    "eslint",
+    "vue",
+    "editor"
+  ],
+  "type": "module",
+  "engines": {
+    "slidev": ">=0.32.1"
+  },
+  "scripts": {
+    "pre-run": "tsx pre-build/pre-build.ts",
+    "dev": "pnpm pre-run && slidev example.md",
+    "build": "slidev build example.md",
+    "export": "slidev export example.md",
+    "screenshot": "slidev export example.md --format png",
+    "lint": "prettier --check .",
+    "fix": "prettier --write ."
+  },
+  "dependencies": {
+    "@ota-meshi/site-kit-eslint-editor-vue": "^0.1.2",
+    "@slidev/theme-default": "^0.25.0",
+    "@typescript-eslint/parser": "^7.1.0",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.22.0",
+    "eslint-plugin-vue-kebab-class-naming": "^0.3.2",
+    "eslint-plugin-vue-scoped-css": "^2.7.2",
+    "espree": "^10.0.1",
+    "events": "^3.3.0",
+    "vue-eslint-parser": "^9.4.2"
+  },
+  "devDependencies": {
+    "@slidev/cli": "0.48.0-beta.18",
+    "@types/node": "^20.11.20",
+    "assert": "^2.1.0",
+    "esbuild": "^0.20.1",
+    "esquery": "^1.5.0",
+    "prettier": "^3.2.5",
+    "tsx": "^4.7.1",
+    "vite": "^5.1.4"
+  }
+}

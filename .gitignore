@@ -1,0 +1,5 @@
+node_modules
+dist
+shim/eslint/index.mjs
+# shim/assert.mjs ?? 
+# typings/eslint/lib/rules
