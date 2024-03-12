@@ -97,6 +97,9 @@ jobs:
       - name: Install packages
         run: pnpm install --no-frozen-lockfile
 
+      - name: Pre-build
+        run: pnpm run pre-run
+
       - name: Build
         run: pnpm run build -- --base /slidev-addon-eslint-editor-vue/
 
