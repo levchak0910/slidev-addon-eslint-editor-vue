@@ -13,11 +13,17 @@ build(
   path.join(dirname, "..", "shim", "eslint", "index.mjs"),
   ["path", "assert", "util", "esquery"],
 )
-// not found yet
+
 build(
   path.join(dirname, "..", "node_modules", "assert"),
   path.join(dirname, "..", "shim", "assert.mjs"),
   ["path"],
+)
+
+build(
+  path.join(dirname, "src", "esquery.mjs"),
+  path.join(dirname, "..", "shim", "esquery.mjs"),
+  [],
 )
 
 function build(input: string, out: string, injects: string[] = []) {
