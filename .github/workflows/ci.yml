@@ -101,7 +101,7 @@ jobs:
         run: pnpm run pre-run
 
       - name: Build
-        run: pnpm run build -- --base /slidev-addon-eslint-editor-vue/
+        run: pnpm run build:gh-pages
 
       - uses: actions/configure-pages@v4
 

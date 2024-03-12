@@ -23,6 +23,7 @@
     "pre-run": "tsx pre-build/pre-build.ts",
     "dev": "pnpm pre-run && slidev example.md",
     "build": "slidev build example.md",
+    "build:gh-pages": "slidev build --base=/slidev-addon-eslint-editor-vue/ example.md",
     "export": "slidev export example.md",
     "screenshot": "slidev export example.md --format png",
     "lint": "prettier --check .",
