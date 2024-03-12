@@ -28,7 +28,8 @@
     "screenshot": "slidev export example.md --format png",
     "release": "bumpp package.json --commit --push --tag",
     "lint": "prettier --check .",
-    "fix": "prettier --write ."
+    "fix": "prettier --write .",
+    "prepare": "husky"
   },
   "dependencies": {
     "@ota-meshi/site-kit-eslint-editor-vue": "^0.1.2",
@@ -49,6 +50,8 @@
     "bumpp": "^9.4.0",
     "esbuild": "^0.20.1",
     "esquery": "^1.5.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "tsx": "^4.7.1",
     "vite": "^5.1.4"
