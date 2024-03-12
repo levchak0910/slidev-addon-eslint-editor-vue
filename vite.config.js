@@ -13,7 +13,6 @@ export default defineConfig({
         "./shim/eslint/use-at-your-own-risk.mjs",
       ),
       eslint: path.join(dirname, "./shim/eslint/index.mjs"),
-      esquery: path.join(dirname, "./shim/esquery.mjs"),
       globby: path.join(dirname, "./shim/globby.mjs"),
       module: path.join(dirname, "./shim/module.mjs"),
       "source-map-js": path.join(dirname, "./shim/source-map-js.mjs"),

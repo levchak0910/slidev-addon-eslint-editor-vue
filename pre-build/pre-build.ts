@@ -11,19 +11,13 @@ const dirname = path.dirname(fileURLToPath(import.meta.url))
 build(
   path.join(dirname, "src", "eslint.mjs"),
   path.join(dirname, "..", "shim", "eslint", "index.mjs"),
-  ["path", "assert", "util", "esquery"],
+  ["path", "assert", "util"],
 )
 
 build(
   path.join(dirname, "..", "node_modules", "assert"),
   path.join(dirname, "..", "shim", "assert.mjs"),
   ["path"],
-)
-
-build(
-  path.join(dirname, "src", "esquery.mjs"),
-  path.join(dirname, "..", "shim", "esquery.mjs"),
-  [],
 )
 
 function build(input: string, out: string, injects: string[] = []) {

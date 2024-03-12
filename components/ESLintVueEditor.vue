@@ -20,9 +20,14 @@
 import { markRaw } from "vue"
 import EslintEditor from "@ota-meshi/site-kit-eslint-editor-vue/ESLintEditor.vue3"
 
+debugger
+
 import { rules as vueRules, processors } from "eslint-plugin-vue"
+console.log("🚀 ~ vueRules:", vueRules)
 import { rules as cssRules } from "eslint-plugin-vue-scoped-css"
+console.log("🚀 ~ cssRules:", cssRules)
 import { rules as vkcnRules } from "eslint-plugin-vue-kebab-class-naming"
+console.log("🚀 ~ vkcnRules:", vkcnRules)
 
 export default {
   name: "ESLintCodeBlock",
