@@ -20,9 +20,17 @@
 import { markRaw } from "vue"
 import EslintEditor from "@ota-meshi/site-kit-eslint-editor-vue/ESLintEditor.vue3"
 
-import { rules as vueRules, processors } from "eslint-plugin-vue"
-import { rules as cssRules } from "eslint-plugin-vue-scoped-css"
-import { rules as vkcnRules } from "eslint-plugin-vue-kebab-class-naming"
+debugger
+
+import * as epVue from "eslint-plugin-vue"
+import * as epCss from "eslint-plugin-vue-scoped-css"
+import * as epVkcn from "eslint-plugin-vue-kebab-class-naming"
+
+console.log("🚀 ~ epVue:", epVue)
+console.log("🚀 ~ epCss:", epCss)
+console.log("🚀 ~ epVkcn:", epVkcn)
+
+debugger
 
 export default {
   name: "ESLintCodeBlock",
@@ -65,8 +73,8 @@ export default {
     return {
       code: "",
       linter: null,
-      preprocess: processors[".vue"].preprocess,
-      postprocess: processors[".vue"].postprocess,
+      preprocess: epVue.processors[".vue"].preprocess,
+      postprocess: epVue.processors[".vue"].postprocess,
       format: {
         insertSpaces: true,
         tabSize: 2,
@@ -174,9 +182,9 @@ export default {
     const linter = (this.linter = markRaw(new Linter()))
 
     const supportedPlugins = [
-      ["vue", vueRules],
-      ["vue-scoped-css", cssRules],
-      ["vue-kebab-class-naming", vkcnRules],
+      ["vue", epVue.rules],
+      ["vue-scoped-css", epCss.rules],
+      ["vue-kebab-class-naming", epVkcn.rules],
     ]
 
     for (const plugin of supportedPlugins) {
