@@ -47,10 +47,9 @@ Usually as any component.
   <div>Hello</div>
 </template>
 ```
-````
 
 </ESLintVueEditor>
-```
+````
 
 - Can pass code as a snippet.
 
