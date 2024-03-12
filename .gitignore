@@ -2,3 +2,4 @@ node_modules
 dist
 shim/eslint/index.mjs
 shim/assert.mjs
+shim/esquery.mjs
