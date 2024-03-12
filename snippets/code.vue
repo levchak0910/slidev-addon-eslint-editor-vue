@@ -49,22 +49,22 @@
 }
 
 .some-component--group {
-  $[disabled] {
+  &[disabled] {
     /* ... */
   }
-  $.active {
+  &.active {
     /* ... */
   }
-  $.interactive {
+  &.interactive {
     /* ... */
   }
 }
 
 .some-component--group-title {
-  $.bold {
+  &.bold {
     /* ... */
   }
-  $.italic {
+  &.italic {
     /* ... */
   }
 }
