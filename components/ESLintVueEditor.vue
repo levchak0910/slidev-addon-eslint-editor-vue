@@ -24,10 +24,12 @@ debugger
 
 import { rules as vueRules, processors } from "eslint-plugin-vue"
 console.log("🚀 ~ vueRules:", vueRules)
-import { rules as cssRules } from "eslint-plugin-vue-scoped-css"
-console.log("🚀 ~ cssRules:", cssRules)
-import { rules as vkcnRules } from "eslint-plugin-vue-kebab-class-naming"
-console.log("🚀 ~ vkcnRules:", vkcnRules)
+// import { rules as cssRules } from "eslint-plugin-vue-scoped-css"
+// console.log("🚀 ~ cssRules:", cssRules)
+// import { rules as vkcnRules } from "eslint-plugin-vue-kebab-class-naming"
+// console.log("🚀 ~ vkcnRules:", vkcnRules)
+
+debugger
 
 export default {
   name: "ESLintCodeBlock",
@@ -180,8 +182,8 @@ export default {
 
     const supportedPlugins = [
       ["vue", vueRules],
-      ["vue-scoped-css", cssRules],
-      ["vue-kebab-class-naming", vkcnRules],
+      // ["vue-scoped-css", cssRules],
+      // ["vue-kebab-class-naming", vkcnRules],
     ]
 
     for (const plugin of supportedPlugins) {
