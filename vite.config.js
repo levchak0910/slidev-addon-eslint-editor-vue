@@ -22,7 +22,17 @@ export default defineConfig({
       buffer: path.join(dirname, "./shim/buffer.mjs"),
       url: path.join(dirname, "./shim/url.mjs"),
       fs: path.join(dirname, "./shim/fs.mjs"),
+      assert: path.join(dirname, "./shim/assert.mjs"),
     },
+  },
+  optimizeDeps: {
+    include: [
+      "eslint-plugin-vue",
+      "eslint-plugin-vue-scoped-css",
+      "eslint-plugin-vue-kebab-class-naming",
+      "espree",
+      "vue-eslint-parser",
+    ],
   },
   define: {
     "process.env.NODE_DEBUG": "false",
