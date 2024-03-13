@@ -17,7 +17,7 @@
   ],
   "type": "module",
   "engines": {
-    "slidev": ">=0.32.1"
+    "slidev": ">=0.48.0"
   },
   "scripts": {
     "pre-run": "tsx pre-build/pre-build.ts",
@@ -33,7 +33,7 @@
   },
   "dependencies": {
     "@ota-meshi/site-kit-eslint-editor-vue": "^0.1.2",
-    "@slidev/client": "0.48.0-beta.18",
+    "@slidev/client": "^0.48.2",
     "@slidev/theme-default": "^0.25.0",
     "@typescript-eslint/parser": "^7.1.0",
     "eslint": "^8.57.0",
@@ -45,7 +45,7 @@
     "vue-eslint-parser": "^9.4.2"
   },
   "devDependencies": {
-    "@slidev/cli": "0.48.0-beta.18",
+    "@slidev/cli": "^0.48.2",
     "@types/node": "^20.11.20",
     "assert": "^2.1.0",
     "bumpp": "^9.4.0",
