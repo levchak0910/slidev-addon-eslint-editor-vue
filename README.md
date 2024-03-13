@@ -22,7 +22,7 @@ pnpm add slidev-addon-eslint-editor-vue
 
 ### Slidev Configuration
 
-Define addon into your slidev addons.
+Define addon in your slidev addons.
 
 In your slides metadata (using Front Matter):
 
@@ -31,6 +31,21 @@ In your slides metadata (using Front Matter):
 addons:
   - slidev-addon-eslint-editor-vue
 ---
+```
+
+### Vite configuration
+
+```js
+// vite.config.js
+import { defineConfig, mergeConfig } from "vite"
+
+import eevConfig from "slidev-addon-eslint-editor-vue/vite.config"
+
+const config = defineConfig({
+  // your config
+})
+
+export default mergeConfig(config, eevConfig)
 ```
 
 ### Use in slides
