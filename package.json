@@ -1,6 +1,6 @@
 {
   "name": "slidev-addon-eslint-editor-vue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "description": "Slidev addon that add eslint vue editor component",
   "author": "Levcsák Sándor",
   "repository": {
