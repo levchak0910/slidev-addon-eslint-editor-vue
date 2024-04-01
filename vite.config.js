@@ -29,7 +29,7 @@ export default defineConfig({
     include: [
       "eslint-plugin-vue",
       "eslint-plugin-vue-scoped-css",
-      "eslint-plugin-vue-kebab-class-naming",
+      "@vkcn/eslint-plugin",
       "espree",
       "vue-eslint-parser",
     ],

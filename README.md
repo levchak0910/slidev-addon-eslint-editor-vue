@@ -80,6 +80,6 @@ Usually as any component.
 
 - [eslint-plugin-vue](https://github.com/vuejs/eslint-plugin-vue)
 - [eslint-plugin-vue-scoped-css](https://github.com/future-architect/eslint-plugin-vue-scoped-css)
-- [eslint-plugin-vue-kebab-class-naming](https://github.com/levchak0910/eslint-plugin-vue-kebab-class-naming)
+- [@vkcn/eslint-plugin](https://github.com/levchak0910/vkcn-eslint-plugin)
 
 Need another plugin? Add [your](./components/ESLintVueEditor.vue#L176)

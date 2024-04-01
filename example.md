@@ -31,9 +31,9 @@ class: text-center
   'vue/no-restricted-class': ['error', 'forbidden'],
   'vue-scoped-css/enforce-style-type': 'error',
   'vue-scoped-css/no-unused-selector': 'error',
-  'vue-kebab-class-naming/no-convention-violation': ['error', { enableFix: true }],
-  'vue-kebab-class-naming/no-dynamic-class-names': 'error',
-  'vue-kebab-class-naming/no-undefined-class-names': 'error',
+  '@vkcn/no-convention-violation': ['error', { enableFix: true }],
+  '@vkcn/no-dynamic-class-names': 'error',
+  '@vkcn/no-undefined-class-names': 'error',
 }">
 
 <<< @/snippets/code.vue

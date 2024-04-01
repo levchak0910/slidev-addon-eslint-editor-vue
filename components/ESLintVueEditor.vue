@@ -22,7 +22,7 @@ import EslintEditor from "@ota-meshi/site-kit-eslint-editor-vue/ESLintEditor.vue
 
 import { rules as vueRules, processors } from "eslint-plugin-vue"
 import { rules as cssRules } from "eslint-plugin-vue-scoped-css"
-import { rules as vkcnRules } from "eslint-plugin-vue-kebab-class-naming"
+import { rules as vkcnRules } from "@vkcn/eslint-plugin"
 
 export default {
   name: "ESLintCodeBlock",
@@ -176,7 +176,7 @@ export default {
     const supportedPlugins = [
       ["vue", vueRules],
       ["vue-scoped-css", cssRules],
-      ["vue-kebab-class-naming", vkcnRules],
+      ["@vkcn", vkcnRules],
     ]
 
     for (const plugin of supportedPlugins) {
